@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klacht Formulier Versturen</title>
+    <style>
+        body {
+            margin: 50px;
+        }
+        input, button, textarea {
+            width: 500px;
+            margin: 5px;
+        }
+        input, button {
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Op deze pagina kunt u een klacht Verzenden.</h1>
+    <form method="post" action="sendemail.php">
+        <input type="text" name="name" placeholder="Uw naam"><br>
+        <input type="email" name="email" placeholder="Uw email adres"><br>
+        <textarea rows="5" cols="80" name="message" placeholder="Uw klacht"></textarea><br>
+        <button type="submit">Klacht Verzenden</button>
+    </form>
+</body>
+</html>
